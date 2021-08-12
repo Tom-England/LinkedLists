@@ -62,10 +62,7 @@ int search(struct Node* head, char* searchTerm){
 	struct Node* p = head;
 	while (p->data){
 		if (strcmp(p->data, searchTerm) == 0){
-			printf("Found\n");
 			return 1;
-		} else {
-			printf("%s is not %s\n", p->data, searchTerm);
 		}
 		p = p->next;
 	}
