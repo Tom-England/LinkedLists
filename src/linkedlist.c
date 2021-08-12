@@ -57,3 +57,18 @@ void printList(struct Node* head){
 	}
 }
 
+int search(struct Node* head, char* searchTerm){
+	// Iterates through list, checks each node against the search term
+	struct Node* p = head;
+	while (p->data){
+		if (strcmp(p->data, searchTerm) == 0){
+			printf("Found\n");
+			return 1;
+		} else {
+			printf("%s is not %s\n", p->data, searchTerm);
+		}
+		p = p->next;
+	}
+	return 0;
+}
+

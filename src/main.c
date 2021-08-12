@@ -12,9 +12,11 @@ int main(){
 		head = pushNode(head, "hi");
 	}
 	printList(head);
+	search(head, "hi");
 	for (int i = 0; i < lim; i++){
 		popNode(head);
 	}
 	printList(head);
+	search(head, "hi");
 	return 0;
 }
