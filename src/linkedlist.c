@@ -60,7 +60,7 @@ void printList(struct Node* head){
 int search(struct Node* head, char* searchTerm){
 	// Iterates through list, checks each node against the search term
 	struct Node* p = head;
-	while (p->data){
+	while (p->next){
 		if (strcmp(p->data, searchTerm) == 0){
 			return 1;
 		}

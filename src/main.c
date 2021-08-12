@@ -12,12 +12,12 @@ int main(){
 		head = pushNode(head, "hi");
 	}
 	printList(head);
-	search(head, "hi");
+	if (search(head, "hi")) { printf("Found hi\n"); } else { printf("Didn't find hi\n");}
 	for (int i = 0; i < lim; i++){
 		popNode(head);
 	}
 	printList(head);
-	search(head, "hi");
+	if (search(head, "hi")) { printf("Found hi\n"); } else{ printf("Didn't find hi\n"); }
 	for (int i = 0; i < 10; i++){
 		head = pushNode(head, "hello");
 	}
