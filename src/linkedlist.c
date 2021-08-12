@@ -68,4 +68,19 @@ int search(struct Node* head, char* searchTerm){
 	}
 	return 0;
 }
-
+int addNodeAtIndex(struct Node* head, char* content, int index) {
+	struct Node* temp = createNode();
+	strcpy(temp->data, content);
+	struct Node* p = head;
+	int counter = 0;
+	while (p->next){
+		if (counter == index - 1){
+			temp->next = p->next;
+			p->next = temp;
+			return 1;
+		}
+		counter++;
+		p = p->next;
+	}
+	return 0;
+}

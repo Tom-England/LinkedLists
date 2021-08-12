@@ -18,5 +18,10 @@ int main(){
 	}
 	printList(head);
 	search(head, "hi");
+	for (int i = 0; i < 10; i++){
+		head = pushNode(head, "hello");
+	}
+	addNodeAtIndex(head, "world", 5);
+	printList(head);
 	return 0;
 }

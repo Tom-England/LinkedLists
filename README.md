@@ -8,10 +8,10 @@ This is a quick linked list implementation in C
 - Pop a node from the end of the list
 - Output the full list
 - Search for a node
+- Add a node to an index
 
 ### Planned Features
 
-- Add a node to an index
 - Remove a node at an index
 
 Tom England 2021

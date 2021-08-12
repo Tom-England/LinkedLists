@@ -20,3 +20,8 @@ void printList(struct Node* head);
 // Returns 1 for found
 // Returns 0 for not found
 int seach(struct Node* head, char* searchTerm);
+
+// Adds a node to the list at the specified index
+// Returns 1 if successful
+// Returns 0 if unsuccessful
+int addNodeAtIndex(struct Node* head, char* content, int index);
