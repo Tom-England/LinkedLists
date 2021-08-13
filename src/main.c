@@ -36,7 +36,7 @@ int main(){
 	for (int i = 0; i < 10; i++){
 		head = pushNode(head, "hello");
 	}
-	addNodeAtIndex(head, "world", 5);
+	addNodeAtIndex(head, "world", 0);
 	printList(head);
 	return 0;
 }

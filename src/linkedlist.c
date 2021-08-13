@@ -70,6 +70,16 @@ int search(struct Node* head, char* searchTerm){
 }
 int addNodeAtIndex(struct Node* head, char* content, int index) {
 	struct Node* temp = createNode();
+	
+	// Special case for index = 0
+	if (index == 0){
+		// If index is 0, head must be replaced with the new Node and the old head used as next
+		strcpy(temp->data, head->data);
+		temp->next = head->next;
+		strcpy(head->data, content);
+		head->next = temp;
+		return 1;
+	}
 	strcpy(temp->data, content);
 	struct Node* p = head;
 	int counter = 0;
