@@ -69,6 +69,8 @@ int search(struct Node* head, char* searchTerm){
 	return 0;
 }
 int addNodeAtIndex(struct Node* head, char* content, int index) {
+	// Error handling for if index is less than 0
+	if (index < 0) { return 0; }
 	struct Node* temp = createNode();
 	
 	// Special case for index = 0
@@ -80,6 +82,7 @@ int addNodeAtIndex(struct Node* head, char* content, int index) {
 		head->next = temp;
 		return 1;
 	}
+	// Case for index != 0
 	strcpy(temp->data, content);
 	struct Node* p = head;
 	int counter = 0;
