@@ -38,5 +38,8 @@ int main(){
 	}
 	addNodeAtIndex(head, "world", 0);
 	printList(head);
+	
+	printf("Length of LL: %d\n", getLength(head));
+	
 	return 0;
 }

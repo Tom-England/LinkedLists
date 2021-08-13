@@ -97,3 +97,13 @@ int addNodeAtIndex(struct Node* head, char* content, int index) {
 	}
 	return 0;
 }
+
+int getLength(struct Node* head){
+	struct Node* p = head;
+	int count = 1;
+	while (p->next){
+		count++;
+		p = p->next;
+	}
+	return count;
+} 

@@ -25,3 +25,6 @@ int seach(struct Node* head, char* searchTerm);
 // Returns 1 if successful
 // Returns 0 if unsuccessful
 int addNodeAtIndex(struct Node* head, char* content, int index);
+
+// Returns the number of nodes in the list
+int getLength(struct Node* head);
