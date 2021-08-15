@@ -11,7 +11,7 @@ struct Node* createNode(){
 	return temp;
 }
 
-struct Node* pushNode(struct Node* head, char* content){
+struct Node* pushNode(struct Node* head, const char* content){
 	// Creates two nodes and assigns content to temps data variable
 	struct Node* temp;
 	struct Node* p;
@@ -57,7 +57,7 @@ void printList(struct Node* head){
 	}
 }
 
-int search(struct Node* head, char* searchTerm){
+int search(struct Node* head, const char* searchTerm){
 	// Iterates through list, checks each node against the search term
 	struct Node* p = head;
 	while (p->next){
@@ -68,11 +68,11 @@ int search(struct Node* head, char* searchTerm){
 	}
 	return 0;
 }
-int addNodeAtIndex(struct Node* head, char* content, int index) {
+int addNodeAtIndex(struct Node* head, const char* content, const int index) {
 	// Error handling for if index is less than 0
 	if (index < 0) { return 0; }
 	struct Node* temp = createNode();
-	
+
 	// Special case for index = 0
 	if (index == 0){
 		// If index is 0, head must be replaced with the new Node and the old head used as next
@@ -106,4 +106,4 @@ int getLength(struct Node* head){
 		p = p->next;
 	}
 	return count;
-} 
+}

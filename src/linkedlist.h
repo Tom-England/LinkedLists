@@ -8,7 +8,7 @@ struct Node* createNode();
 
 // Appends a Node to the end of the linked list with data set to content
 // Returns a pointer to head
-struct Node* pushNode(struct Node* head, char* content);
+struct Node* pushNode(struct Node* head, const char* content);
 
 // Removes the Node at the end of the linked list and frees its memory
 void popNode(struct Node* head);
@@ -19,12 +19,12 @@ void printList(struct Node* head);
 // Searches for string searchTerm in the list
 // Returns 1 for found
 // Returns 0 for not found
-int seach(struct Node* head, char* searchTerm);
+int seach(struct Node* head, const char* searchTerm);
 
 // Adds a node to the list at the specified index
 // Returns 1 if successful
 // Returns 0 if unsuccessful
-int addNodeAtIndex(struct Node* head, char* content, int index);
+int addNodeAtIndex(struct Node* head, const char* content, const int index);
 
 // Returns the number of nodes in the list
 int getLength(struct Node* head);
