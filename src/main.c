@@ -39,7 +39,14 @@ int main(){
 	addNodeAtIndex(head, "world", 0);
 	printList(head);
 	
+	sysmsg("Length Test");
+
 	printf("Length of LL: %d\n", getLength(head));
 	
+	sysmsg("Delete at index test");
+
+	deleteNodeAtIndex(head, 1);
+	printList(head);
+
 	return 0;
 }

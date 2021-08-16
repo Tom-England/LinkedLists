@@ -9,10 +9,10 @@ This is a quick linked list implementation in C
 - Output the full list
 - Search for a node
 - Add a node to an index
+- Remove a node at an index
 
 ### Planned Features
 
-- Remove a node at an index
 - Error Handling
 
 Tom England 2021

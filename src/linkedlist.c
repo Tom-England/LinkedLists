@@ -107,3 +107,20 @@ int getLength(struct Node* head){
 	}
 	return count;
 }
+
+int deleteNodeAtIndex(struct Node* head, const int index){
+	if (index < 0) { return 0; }
+	struct Node* p = head;
+	int counter = 0;
+	while (p->next){
+		if (counter == index-1){
+			struct Node* new_next = p->next->next;
+			free(p->next);
+			p->next = new_next;
+			return 1;
+		}
+		counter++;
+		p = p->next;
+	}
+	return 0;
+}

@@ -28,3 +28,8 @@ int addNodeAtIndex(struct Node* head, const char* content, const int index);
 
 // Returns the number of nodes in the list
 int getLength(struct Node* head);
+
+// Remove a node from the list at the specified index
+// Returns 1 if successful
+// Returns 0 if unseccessful
+int deleteNodeAtIndex(struct Node* head, const int index);
