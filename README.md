@@ -16,6 +16,7 @@ For examples on the use of the linked list, see main.c
 - Search for a node
 - Add a node to an index
 - Remove a node at an index
+- Peek at node by index
 
 ### Planned Features
 

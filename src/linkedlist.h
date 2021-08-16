@@ -33,3 +33,7 @@ int getLength(struct Node* head);
 // Returns 1 if successful
 // Returns 0 if unseccessful
 int deleteNodeAtIndex(struct Node* head, const int index);
+
+// Returns the data of the node at the specified index
+// Returns NULL if index is out of range
+const char* peek(struct Node* head, const int index);

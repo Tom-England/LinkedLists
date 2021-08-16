@@ -124,3 +124,18 @@ int deleteNodeAtIndex(struct Node* head, const int index){
 	}
 	return 0;
 }
+
+const char* peek(struct Node* head, const int index){
+	if (index < 0) { return NULL; }
+	struct Node* p = head;
+	int counter = 0;
+	while (p->next){
+		if (counter == index){
+			return p->data;
+		}
+		counter++;
+		p = p->next;
+	}
+		
+	return NULL;
+}

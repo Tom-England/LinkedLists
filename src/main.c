@@ -47,6 +47,10 @@ int main(){
 
 	deleteNodeAtIndex(head, 1);
 	printList(head);
+	
+	sysmsg("Peek test");
+	printf("Data at index 0: %s\n", peek(head, 0));
+	printf("Data at index 4: %s\n", peek(head, 4));
 
 	return 0;
 }
