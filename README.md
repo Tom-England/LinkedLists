@@ -21,5 +21,6 @@ For examples on the use of the linked list, see main.c
 ### Planned Features
 
 - Error Handling
+- Support for multiple data types?
 
 Tom England 2021
