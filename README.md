@@ -2,6 +2,12 @@
 
 This is a quick linked list implementation in C
 
+### Usage
+
+Simply include linkedlist.c in the file you wish to use it in
+
+For examples on the use of the linked list, see main.c
+
 ### Current Features
 
 - Push a node to the end of the list
